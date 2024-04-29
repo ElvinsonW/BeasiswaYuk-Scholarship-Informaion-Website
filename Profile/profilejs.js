@@ -150,3 +150,8 @@ ratedBtn.addEventListener('click', () => {
 
 showContent(historyBtn,scholarshipContent);
 riwayatTitle.style.display = "flex"
+
+let loginBtn = document.querySelector(".login-btn")
+loginBtn.addEventListener("click",function(){
+  window.location.href = "../Loginpage/loginpage.html"
+})

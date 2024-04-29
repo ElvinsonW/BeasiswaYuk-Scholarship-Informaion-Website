@@ -1,4 +1,3 @@
-
 let lastScrollTop = 0;
 
 window.addEventListener("scroll", function() {
@@ -45,7 +44,27 @@ const infiniteScroll = () => {
   }
 };
 
-
-
 carousel.addEventListener("scroll",infiniteScroll);
 
+
+let exploreBtn = document.querySelector(".left-banner button")
+
+exploreBtn.addEventListener("click", function(){
+  window.location.href = "./ExplorePage/explore.html";
+})
+
+
+let loginBtn = document.querySelector(".login-btn")
+loginBtn.addEventListener("click",function(){
+  window.location.href = "./Loginpage/loginpage.html"
+})
+
+let bca = document.getElementById("bca")
+bca.addEventListener("click",function(){
+  window.location.href = "./Detail Beasiswa/detail.html"
+})
+
+let seemoreBtn = document.getElementById("see-more")
+seemoreBtn.addEventListener("click",function(){
+  window.location.href = "./ExplorePage/explore.html";
+})

@@ -37,3 +37,8 @@ requirement_thumbnail.addEventListener("click",function(){
     arrow.classList.add("rotate");
   }
 });
+
+let loginBtn = document.querySelector(".login-btn")
+loginBtn.addEventListener("click",function(){
+  window.location.href = "../Loginpage/loginpage.html"
+})

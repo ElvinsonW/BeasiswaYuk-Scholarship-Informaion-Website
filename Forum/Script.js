@@ -78,8 +78,3 @@ let loginBtn = document.querySelector(".login-btn")
 loginBtn.addEventListener("click",function(){
   window.location.href = "../Loginpage/loginpage.html"
 })
-
-let bca = document.getElementById("bca")
-bca.addEventListener("click",function(){
-  window.location.href = "../Detail Beasiswa/detail.html"
-})

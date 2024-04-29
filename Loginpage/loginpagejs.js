@@ -40,7 +40,7 @@ login_btn.addEventListener("click",function(){
         pass_error.innerHTML = "*Password must at least contains 1 digit, 1 capital letter, and 1 lowercase letter"
     }
     else{
-        window.location.href = "E:/02-Cawu 2/05-Human and Computer Interaction/02-Latihan Sendiri/01-Basic Web Programming/04-Project Lecture/Homepage/home.html"
+        window.location.href = "../index.html"
     }
 })
 
