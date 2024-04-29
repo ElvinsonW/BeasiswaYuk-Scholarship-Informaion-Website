@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="loginpagecss.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BeasiswaYuk</title>
+</head>
+<body>
+    <div class="left-container">
+        <img src="./element/logo.png" alt="logo" class="logo">
+        <img src="./element/wisuda.png" alt="wisuda" class="wisuda">
+    </div>
+    <div class="right-container">
+        <div class="form-box">
+            <h1>Log in</h1>
+            <p>New to BeasiswaYuk?<b>Sign up for free</b></p>
+            <form class="login-form">
+                <div class="input input-email">
+                    <input type="email" class="email" id="email" placeholder="">
+                    <label for="email">Email Address</label>
+                    <p class="error email-error"></p>
+                </div>
+    
+                <div class="input input-pass">
+                    <input type="password" class="password" id="pass" placeholder="">
+                    <label for="pass">Password</label>
+                    <i class="fa-solid fa-eye-slash"></i>
+                    <p class="error pass-error"></p>
+                </div>
+            </form>
+            <a href="">Forget Password?</a>
+            <button id="login-btn">Log in</button>
+            <div class="other-btn">
+                <div class="social-media">
+                    <i class="fa-brands fa-facebook"></i>
+                </div>
+                <div class="social-media">
+                    <i class="fa-brands fa-apple"></i>
+                </div>
+                <div class="social-media">
+                    <img src="./element/google.png" alt="google">
+                </div>
+                <div class="social-media">
+                    <i class="fa-brands fa-twitter"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="loginpagejs.js"></script>
+</body>
+</html>

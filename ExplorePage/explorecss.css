@@ -1,0 +1,571 @@
+body{
+    position: relative;
+    min-width: 900px;
+    min-height: 100vh;
+    height: 320vh;
+    display: flex;
+    justify-content: center;
+    font-family: Poppins;
+    scroll-margin-top: 100px;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.header{
+    height: 15%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 0;
+    position: fixed;
+    background-color: white;
+    border-bottom: 1px solid black;
+    transition: top 0.5s ease-in-out, opacity 0.3s ease-in-out;
+    z-index: 5;
+}
+
+.header .logo{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 20%;
+    background-size: cover;
+}
+
+.logo img{
+    height: auto;
+    width: 100%;
+    margin-top: -10px;
+}
+
+.header .mid-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 60%;
+}
+
+.header .right-header{
+    display: flex;
+    height: 100%;
+    width: 20%;
+}
+
+
+.search-bar{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 90%;
+    height: 30%;
+    padding: 5px;
+    border-radius: 50px;
+    background-color: white;
+    border: 1px solid #cacaca;
+    margin-top: 5px;
+}
+
+.search-text{
+    margin-right: 10px;
+    width: 80%;
+    height: 100%;
+    border: none;
+}
+
+.search-text:focus{
+    outline: none;
+    background-color: transparent;
+}
+
+
+.search-bar .search-btn{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 5px;
+    background-color: #FFF712;
+    border-radius: 15px;
+    width: 15%;
+    height: 100%;
+    border: none;
+    font-size: 0.9rem;
+    font-weight: bolder;
+    box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.5);
+}
+
+.nav{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    list-style-type: none;
+}
+
+.nav li a{
+    position: relative;
+    font-family: Helvetica;
+    font-size: 0.85rem;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    margin: 0 20px;
+}
+
+.nav li a::before {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    height: 2px;
+    width: 0px;
+    background-color: #FFF712;
+    transition: all 0.5s;
+}
+
+.nav li:hover a::before {
+    width: 100%;
+}
+
+.login-btn, .sign-up-btn{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 40%;
+    font-size: 0.9rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 20px;
+    margin-top: 15px;
+}
+
+.login-btn{
+    width: 35%;
+    margin: 15px 20px 0 10px;
+    color: black;
+    background-color: white;
+    border: 1px solid #cacaca;
+}
+
+.sign-up-btn{
+    width: 41%;
+    color: white;
+    background-color: black;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 275vh;
+    margin-top: 95px;
+}
+
+.container .title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+    width: 100%;
+    height: 8%;
+    font-size: 3rem;
+    font-weight: 600;
+    color: #FFF712;
+    background-color: #000000;
+}
+
+.slide-banner {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    height: 600px;
+    overflow: hidden;
+    margin: 20px auto;
+}
+
+.imgs {
+    display: flex;
+    transition: 0.5s;
+    width: 100%;
+    height: fit-content;
+    transition: all 0.75s ease;
+}
+
+.imgs img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 50px;
+}
+
+.img-navbar {
+    bottom: 5px;
+    left: 120px;
+    width: 150px;
+    height: 20px;
+    margin-top: 20px;
+}
+
+.img-navbar li{
+    display: inline-block;
+    list-style: none;
+    margin: 1px;
+    width: 15px;
+    height: 15px;
+    border-radius: 20px;
+    background-color: #434343;
+    transition: all 0.5s ease-in-out;
+}
+
+.img-navbar li.active{
+    width: 35px;
+    background-color: #0D7FCC;
+}
+
+.beasiswa-container{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+}
+
+.filter{
+    color: #191D23;
+    background-color: #F0F0F0;
+    width: 33%;
+    height: fit-content;
+    padding: 25px;
+    border-radius: 20px;
+}
+
+.filter h1{
+    font-size: 1.7rem;
+    font-weight: 600;
+    margin: 0 0 20px 0;
+}
+
+.filter-subtitle{
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 30px;
+    margin: 20px 0;
+}
+
+.filter-subtitle h3{
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.filter-subtitle i{
+    position: absolute;
+    right: 0;
+    color: #64748B;
+    font-size: 20px;
+    transition: all 0.5s ease;
+}
+
+.rotate{
+    transform: rotate(180deg);
+}
+
+.option{
+    display: none;
+}
+
+.filter-option{
+    margin: 15px 0;
+    font-size: 1rem;
+    transform: translateX(-3px);
+}
+
+.list-beasiswa{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: calc((100% / 3) - 20px);
+    gap: 30px;
+    padding: 30px;
+    width: 54%;
+    height: 150vh;
+    border-radius: 20px;
+    background-color: #F0F0F0;
+    overflow-y: auto;
+}
+
+.beasiswa{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    padding: 20px
+}
+
+.beasiswa img{
+    width: 120%;
+    height: 100px;
+    object-fit: cover;
+    transform: translateX(-25px);
+}
+
+.beasiswa h4{
+    font-weight: 600;
+    margin: 5px 0 0 0;
+}
+
+.beasiswa p:nth-child(3){
+    font-size: 0.75rem;
+    font-weight: 500;
+    margin: 0;
+}
+
+.beasiswa p:nth-child(4){
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: #84829A;
+    margin: 0;
+}
+
+.beasiswa .interaksi{
+    display: flex;
+    margin: 10px 0 5px 0;
+}
+
+.on-trending{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 30px;
+    transform: translateX(25px);
+}
+
+.on-trending img{
+    width: 15px;
+    height: 15px;
+}
+
+.on-trending p{
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #84829A;
+    transform: translate(-17px,1px);
+}
+
+.beasiswa .interaksi .area:first-child i{
+    font-size: 12px;
+    color: #9CA0B0;
+}
+
+.beasiswa .interaksi .area:last-child i{
+    font-size: 10px;
+    color: #9CA0B0;
+    transform: translateX(-1px);
+}
+
+.area{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    width: 25px;
+    height: 25px;
+    border-radius: 20px;
+    background-color: #F5F5F5;
+}
+
+.animated-love{
+    animation: love 1s ease;
+}
+
+@keyframes love {
+    0%{
+        transform: rotate(0);
+    }
+    40%{
+        transform: rotate(360deg);
+    }
+    60%{
+        transform: scale(0.2);
+    }
+    100%{
+        transform: scale(1);
+        color: #EB5050;
+    }
+}
+
+/* Hide the default checkbox */
+input[type="checkbox"] {
+    display: none;
+}
+
+/* Style the custom checkbox container */
+input[type="checkbox"] + label {
+    position: relative;
+    padding-left: 25px; 
+    cursor: pointer;
+    display: inline-block;
+    line-height: 20px;
+}
+
+input[type="checkbox"] + label:before {
+    content: "";
+    display: inline-block;
+    width: 15px; /* adjust as needed */
+    height: 15px; /* adjust as needed */
+    border: 2px solid #ccc; /* default color */
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+input[type="checkbox"]:checked + label:before {
+    background-color: #FEC225;
+    border-color: #FEC225; 
+}
+
+input[type="checkbox"] + label:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+input[type="checkbox"]:checked + label:after {
+    display: block;
+    transform: translateY(-1px);
+}
+
+input[type="checkbox"] + label:after {
+    content: "\2713"; 
+    font-size: 16px;
+    color: #FFFFFF;
+    left: 4px; 
+    top: 1px; 
+}
+
+
+.list-beasiswa::-webkit-scrollbar {
+    width: 8px;  
+}
+
+.list-beasiswa::-webkit-scrollbar-thumb {
+    background-color: #b04848;  
+    border-radius: 10px;
+    width: 10px;
+    height: 20px;
+}
+
+.list-beasiswa::-webkit-scrollbar-track {
+    background-color: #D9D9D9; 
+    border-radius: 10px;
+    width: 2px;
+    height: calc(100% - 16px);
+}
+
+.footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 90%;
+    padding: 0 5%;
+    height: 160px;
+    color: #FFFFFF;
+    background-color: #000000;
+    display: flex;
+    align-items: center;
+    font-family: Helvetica;
+}
+
+.footer div{
+    height: 130px;
+}
+
+.footer .company{
+    width: 15%;
+}
+
+.footer .contact-us{
+    width: 20%;
+    margin-right: 260px;
+}
+
+.footer .service{
+    width: 20%;
+    margin-right: 70px;
+    transform: translateY(5px);
+}
+
+.contact-us #alamat{
+    margin: 2px 0;
+}
+
+.contact-us #email{
+    margin-top: 10px;
+}
+
+.footer h4{
+    font-weight: 600;
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+.footer p{
+    font-size: 0.7rem;
+    margin: 5px 0;
+}
+
+.service img{
+    width: 140px;
+    transform: translateX(-10px);
+}
+
+.social-media h4{
+    font-size: 0.8rem;
+}
+
+.social-media div{
+    width: 150px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.social-media div i{
+    margin: 15px;
+    margin-left: 0;
+}
+
+#atas i{
+    margin: 15px 9px;
+    transform: translateX(-7px);
+}
+
+#atas i:first-child:hover{
+    color: #0866FF;
+}
+
+#atas i:nth-child(2):hover{
+    color: #3396D8;
+}
+
+#atas i:last-child:hover{
+    color: #C837AB;
+}
+
+#bwh i:first-child:hover{
+    color: #5662F6;
+}
+
+#bwh i:nth-child(2):hover{
+    color: #FF0000;
+}
+
+#bwh i:last-child:hover{
+    color: #2FA3D9;
+}
+

@@ -1,0 +1,626 @@
+body{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    font-family: League Spartan;
+}
+
+p{
+    margin: 0;
+}
+
+h1{
+    margin: 0;
+}
+
+.header{
+    height: 15%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 0;
+    position: fixed;
+    background-color: white;
+    border-bottom: 1px solid black;
+    transition: top 0.5s ease-in-out, opacity 0.3s ease-in-out;
+    z-index: 5;
+}
+
+.header .logo{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 20%;
+    background-size: cover;
+}
+
+.logo img{
+    height: auto;
+    width: 100%;
+    margin-top: -10px;
+}
+
+.header .mid-header{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+
+.header .right-header{
+    display: flex;
+    height: 100%;
+    width: 20%;
+}
+
+
+.search-bar{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 90%;
+    height: 30%;
+    padding: 5px;
+    border-radius: 50px;
+    background-color: white;
+    border: 1px solid #cacaca;
+    margin-top: 5px;
+}
+
+.search-text{
+    margin-right: 10px;
+    width: 80%;
+    height: 100%;
+    border: none;
+}
+
+.search-text:focus{
+    outline: none;
+    background-color: transparent;
+}
+
+.search-bar .search-btn{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 5px;
+    background-color: #FFF712;
+    border-radius: 15px;
+    width: 15%;
+    height: 100%;
+    border: none;
+    font-size: 0.9rem;
+    font-weight: bolder;
+    box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.5);
+}
+
+.nav{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    list-style-type: none;
+    gap: 40px;
+}
+
+.nav li a{
+    position: relative;
+    font-family: Helvetica;
+    font-size: 0.85rem;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+}
+
+.nav li a::before {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    height: 2px;
+    width: 0px;
+    background-color: #FFF712;
+    transition: all 0.5s;
+}
+
+.nav li:hover a::before {
+    width: 100%;
+}
+
+.login-btn, .sign-up-btn{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 40%;
+    font-size: 0.9rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 20px;
+    margin-top: 15px;
+}
+
+.login-btn{
+    width: 35%;
+    margin: 15px 20px 0 10px;
+    color: black;
+    background-color: white;
+    border: 1px solid #cacaca;
+}
+
+.sign-up-btn{
+    width: 41%;
+    color: white;
+    background-color: black;
+}
+
+.container{
+    margin-top: 110px;
+}
+
+.profile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+    gap: 30px;
+}
+
+.profile i{
+    font-size: 7.5rem;
+    padding: 35px 25px 0 25px;
+    border: 1px solid #000;
+    border-radius: 100px;
+    overflow: hidden;
+    background-color: #c4c4c4;
+}
+
+.profile .detail{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;  
+}
+
+.profile .detail .name{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.profile .detail .name h1{
+    font-size: 3.2rem;
+    font-weight: 600;
+}
+
+.profile .detail .name p{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.profile .detail .edit-setting{
+    display: flex;
+    gap: 10px;
+}
+
+.profile .detail .edit-setting button{
+    font-size: 0.9rem;
+    font-weight: bold;
+    width: 150px;
+    height: 30px;
+    border: none;
+    border-radius: 20px;
+    color: #FFF712;
+    background-color: #000;
+}
+
+.content{
+    overflow: hidden;
+}
+
+.content .navigation{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    width: 100%;
+    height: 40px;
+    color: #FFF;
+    background-color: #000;
+}
+
+.content .navigation p{
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.content .navigation p:first-child{
+    margin-left: 30px;
+}
+
+.scholarship{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 60vh;
+    gap: 10px;
+}
+
+.scholarship .title{
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+}
+
+.right-title div{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.right-title div h4{
+    font-weight: 600;
+    font-size: 3rem;
+    margin: 0;
+}
+
+.right-title div i{
+   font-size: 1.75rem;
+}
+
+#fav-title{
+    display: none;
+}
+
+#fav-title i{
+    color: #EB5050;
+}
+
+#rated-title{
+    display: none;
+}
+
+#rated-title i{
+    color: #FDD836;
+}
+
+.scholarship .title button{
+    width: 130px;
+    height: 40px;
+    background-color: transparent;
+    border: 2px solid black;
+    border-radius: 30px;
+}
+
+.scholarship button:hover{
+    color: #FFF712;
+    background-color: black;
+    box-shadow: 0 0 7px 0 rgba(255,247,18);
+}
+
+.scholarship-slider{
+    display: flex;
+    align-items: center;
+    width: 95%;
+    height: 70%;
+    position: relative;
+    top: 20px;
+}
+
+.scholarship-slider .slider{
+    display: grid;
+    align-items: center;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100% / 3) -10px);
+    grid-auto-rows: 100%;
+    gap: 30px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+.scholarship-slider i{
+    height: 50px;
+    width: 50px;
+    background-color: black;
+    color: #FFF712;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+}
+
+.scholarship-slider i:first-child{
+    left: -15px;
+}
+
+.scholarship-slider i:last-child{
+    right: -25px;
+}
+
+.scholarship-slider .card{
+    height: 100%;
+    border: none;
+    border-radius: 20px;
+}
+
+.forum-content{
+    display: flex;
+    justify-content: center;
+    width: 71%;
+    height: 79vh;
+    overflow-y: scroll;
+}
+
+.forum-content::-webkit-scrollbar {
+    display: none;
+}
+
+.forum{
+    display: flex;
+    gap: 50px;
+}
+
+.forum .nav{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 15px;
+    width: 25vw;
+    height: 80vh;
+    background-color: #000;
+}
+
+.forum .nav button{
+    font-size: 1.1rem;
+    font-weight: bold;
+    width: 200px;
+    height: 40px;
+    transform: translateY(70px);
+    border: none;
+    border-radius: 20px;
+    background-color: #FFF712;
+}
+
+.forum .nav .back{
+    position: absolute;
+    padding: 10px 25px;
+    bottom: 30px;
+    left: 30px;
+    border-radius: 50px;
+    background-color: #FFF712;
+}
+
+.post-content{
+    flex-direction: column;
+}
+
+.replies-content{
+    flex-direction: column;
+    display: none;
+}
+
+.likes-content{
+    flex-direction: column;
+    display: none;
+}
+
+#like{
+    color: #EB5050;
+}
+
+.replies-content .reply-tweet{
+    width: 75%;
+    transform: translateX(140px);
+}
+
+.reply-tweet .activities::before{
+    content: '';
+    position: absolute;
+    top: 175px;
+    border-bottom: 1px solid #000;
+    width: 90%;
+}
+
+#username-tag{
+    color: #FEC225;
+}
+
+.tweet{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin-top: 25px;
+    padding: 25px 30px;
+    border-radius: 20px;
+    box-shadow: 0 0 5px 2px rgba(0,0,0,0.3);
+    transform: translateX(5px);
+}
+
+.tweet .tweet-profile{
+    display: flex;
+    align-items: center;
+}
+
+.tweet .tweet-profile img{
+    width: 60px;
+    height: 60px;
+    margin-right: 15px;
+    padding: 5px;
+    border: 1px solid #000;
+    border-radius: 100%;
+}
+
+.tweet .tweet-profile .tweet-username h2{
+    margin: 0;
+}
+
+.tweet .tweet-profile .tweet-username p{
+    margin: 0;
+    font-weight: bold;
+    font-size: 0.9rem;
+    color: #969090;
+}
+
+.tweet .desc{
+    width: 95%;
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.tweet .tag{
+    position: relative;
+    display: flex;
+    width: 70%;
+    margin: 0;
+    margin-top: 10px;
+}
+
+.tweet .tag p{
+    margin: 0;
+    margin-right: 10px;
+    padding: 5px 10px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    border-radius: 10px;
+    color: #4D4242;
+    background-color: #D9D9D9;
+}
+
+.tweet .tag::after{
+    content: '';
+    position: absolute;
+    top: 40px;
+    border-bottom: 1px solid #000;
+    width: 142%;
+}
+
+.tweet .activities{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.tweet .activities .activity{
+    display: flex;
+    align-items: center;
+    width: 15%;
+}
+
+.tweet .activities .activity i{
+    font-size: 1.25rem;
+    margin-right: 7px;
+}
+
+.tweet .activities .activity p{
+    margin: 0;
+}
+
+.footer{
+    width: 90%;
+    padding: 0 5%;
+    height: 160px;
+    color: #FFFFFF;
+    background-color: #000000;
+    display: flex;
+    align-items: center;
+    font-family: Helvetica;
+    margin-top: 100px;
+}
+
+.footer div{
+    height: 130px;
+}
+
+.footer .company{
+    width: 15%;
+}
+
+.footer .contact-us{
+    width: 20%;
+    margin-right: 260px;
+}
+
+.footer .service{
+    width: 20%;
+    margin-right: 70px;
+    transform: translateY(5px);
+}
+
+.contact-us #alamat{
+    margin: 2px 0;
+}
+
+.contact-us #email{
+    margin-top: 10px;
+}
+
+.footer h4{
+    font-weight: 600;
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+.footer p{
+    font-size: 0.7rem;
+    margin: 5px 0;
+}
+
+.service img{
+    width: 140px;
+    transform: translateX(-10px);
+}
+
+.social-media h4{
+    font-size: 0.8rem;
+}
+
+.social-media div{
+    width: 150px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.social-media div i{
+    margin: 15px;
+    margin-left: 0;
+}
+
+#atas i{
+    margin: 15px 9px;
+    transform: translateX(-7px);
+}
+
+#atas i:first-child:hover{
+    color: #0866FF;
+}
+
+#atas i:nth-child(2):hover{
+    color: #3396D8;
+}
+
+#atas i:last-child:hover{
+    color: #C837AB;
+}
+
+#bwh i:first-child:hover{
+    color: #5662F6;
+}
+
+#bwh i:nth-child(2):hover{
+    color: #FF0000;
+}
+
+#bwh i:last-child:hover{
+    color: #2FA3D9;
+}

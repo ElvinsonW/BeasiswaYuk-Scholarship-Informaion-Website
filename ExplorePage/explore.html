@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="explorecss.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>BeasiswaYuk</title>
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        <div class="logo">
+            <img src="./element/logo.png" alt="BeasiswaYuk!">
+        </div>
+
+        <div class="mid-header">
+            <form class="search-bar">
+                <input type="text" class="search-text" id=  "search-text">
+                <button class="search-btn">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    Search
+                </button>
+            </form>
+    
+            <div class="nav">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="aboutus.html">About us</a></li>
+                <li><a href="scholarship.html">Services</a></li>
+                <li><a href="forum.html">Forum</a></li>
+                <li><a href="artikel.html">Article</a></li>
+            </div>
+        </div>
+        
+        <div class="right-header">
+            <button class="login-btn">
+                Login
+                <i class="fa-solid fa-arrow-right-to-bracket"></i>
+            </button>
+    
+            <button class="sign-up-btn">
+                Sign Up
+                <i class="fa-solid fa-user-plus"></i>
+            </button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="title">
+            Find Out Scholarship Information
+        </div>
+
+        <div class="slide-banner">
+            <div class="imgs">
+                <img src="./element/banner1.png" alt="gambar-1">
+                <img src="./element/banner2.png" alt="gambar-2">
+                <img src="./element/banner3.png" alt="gambar-3">
+                <img src="./element/banner4.png" alt="gambar-4">
+                <img src="./element/banner5.png" alt="gambar-5">
+            </div>
+    
+            <div class="img-navbar">
+                <li class="active"></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </div>
+        </div>
+
+        <div class="beasiswa-container">
+            <div class="filter">
+                <h1>Filters</h1>
+                <div class="place filter-type">
+                    <div class="filter-subtitle">
+                        <h3>Type of Place</h3>
+                        <i class="fa-solid fa-chevron-up rotate"></i>
+                    </div>
+
+                    <div class="option">
+                        <div class="filter-option">
+                            <input type="checkbox" id="domestic-input">
+                            <label for="domestic-input">Domestic (Dalam Negeri)</label>
+                        </div>
+    
+                        <div class="filter-option">
+                            <input type="checkbox" id="overseas-input">
+                            <label for="overseas-input">Overseas (Luar Negeri)</label>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="filter-type">
+                    <div class="filter-subtitle">
+                        <h3>Educational Level</h3>
+                        <i class="fa-solid fa-chevron-up rotate"></i>
+                    </div>
+
+                    <div class="option">
+                        <div class="filter-option">
+                            <input type="checkbox" id="junior-input">
+                            <label for="junior-input">Junior High School (SMP)</label>
+                        </div>
+    
+                        <div class="filter-option">
+                            <input type="checkbox" id="senior-input">
+                            <label for="senior-input">Senior High School (SMA)</label>
+                        </div>
+    
+                        <div class="filter-option">
+                            <input type="checkbox" id="diploma-input">
+                            <label for="diploma-input">Diploma (D1, D2, D3, D4)</label>
+                        </div>
+    
+                        <div class="filter-option">
+                            <input type="checkbox" id="bachelor-input">
+                            <label for="bachelor-input">Bachelor (Sarjana)</label>
+                        </div>
+    
+                        <div class="filter-option">
+                            <input type="checkbox" id="master-input">
+                            <label for="master-input">Master (Magister)</label>
+                        </div>
+    
+                        <div class="filter-option">
+                            <input type="checkbox" id="dosctoral-input">
+                            <label for="doctoral-input">Doctoral (Doktoral)</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="scholarship-type filter-type">
+                    <div class="filter-subtitle">
+                        <h3>Type of Scholarship</h3>
+                        <i class="fa-solid fa-chevron-up rotate"></i>
+                    </div>
+                    
+                    <form class="option">
+                        <div class="filter-option">
+                            <input type="checkbox" id="full-fund-input">
+                            <label for="full-fund-input">Fully Funded Scholarship</label>
+                        </div>
+
+                        <div class="filter-option">
+                            <input type="checkbox" id="partial-fund-input">
+                            <label for="partial-fund-input">Partial Funded Scholarship</label>
+                        </div>
+
+                        <div class="filter-option">
+                            <input type="checkbox" id="merid-based-input">
+                            <label for="merid-based-input">Merid-Based Scholarship</label>
+                        </div>
+
+                        <div class="filter-option">
+                            <input type="checkbox" id="fin-need-input">
+                            <label for="fin-need-input">Financial Need-Based Scholarship</label>
+                        </div>
+
+                        <div class="filter-option">
+                            <input type="checkbox" id="sports-input">
+                            <label for="sports-input">Sport Scholarship</label>
+                        </div>
+
+                        <div class="filter-option">
+                            <input type="checkbox" id="minority">
+                            <label for="minority">Minority Scholarship</label>
+                        </div>
+
+                        <div class="filter-option">
+                            <input type="checkbox" id="com-serv-input">
+                            <label for="com-serv-input">Community Service Scholarship</label>
+                        </div>
+
+                        <div class="filter-option">
+                            <input type="checkbox" id="special-field-input">
+                            <label for="special-field-input">Special Field Scholarship</label>
+                        </div>
+                    </form>
+                    
+                </div>
+            </div>
+
+            <div class="list-beasiswa" id="list-beasiswa">
+                <div class="beasiswa">
+                    <img src="./element/BCA.png" alt="BCA">
+                    <h4>Beasiswa PPBP/PPTI BCA</h4>
+                    <p>Fully Funded Scholarship by Bank Central Asia</p>
+                    <p>Ongoing | 6 Apr - 30 Sept 2024</p>
+
+                    <div class="interaksi">
+                        <div class="area">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                        <div class="area">
+                            <i class="fa-solid fa-paper-plane"></i>
+                        </div>
+                    </div>
+
+                    <div class="on-trending">
+                        <img src="./element/fire.png" alt="fire">
+                        <p>On trending</p>
+                    </div>
+                </div>
+                <div class="beasiswa">
+                    <img src="./element/LPDP.png" alt="BCA">
+                    <h4>Beasiswa LPDP</h4>
+                    <p>Fully Funded Scholarship by Kemendikbud</p>
+                    <p>Ended | 6 Apr - 30 Sept 2024</p>
+
+                    <div class="interaksi">
+                        <div class="area">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                        <div class="area">
+                            <i class="fa-solid fa-paper-plane"></i>
+                        </div>
+                    </div>
+
+                    <div class="on-trending">
+                        <img src="./element/fire.png" alt="fire">
+                        <p>On trending</p>
+                    </div>
+                </div>
+                <div class="beasiswa">
+                    <img src="./element/Iisma.png" alt="BCA">
+                    <h4>IISMA</h4>
+                    <p>Fully Funded Scholarship by Kemendikbud</p>
+                    <p>Ongoing | 6 Apr - 30 Sept 2024</p>
+
+                    <div class="interaksi">
+                        <div class="area">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                        <div class="area">
+                            <i class="fa-solid fa-paper-plane"></i>
+                        </div>
+                    </div>
+
+                    <div class="on-trending">
+                        <img src="./element/fire.png" alt="fire">
+                        <p>On trending</p>
+                    </div>
+                </div>
+                <div class="beasiswa">
+                    <img src="./element/GKS.png" alt="BCA">
+                    <h4>Global Korea Scholarship</h4>
+                    <p>Fully Funded Scholarship by Korean Goverment</p>
+                    <p>Ongoing | 6 Apr - 30 Sept 2024</p>
+
+                    <div class="interaksi">
+                        <div class="area">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                        <div class="area">
+                            <i class="fa-solid fa-paper-plane"></i>
+                        </div>
+                    </div>
+
+                    <div class="on-trending">
+                        <img src="./element/fire.png" alt="fire">
+                        <p>On trending</p>
+                    </div>
+                </div>
+                
+                <div class="beasiswa">
+                    <img src="./element/DAAD.png" alt="BCA">
+                    <h4>DAAD Scholarship</h4>
+                    <p>Fully Funded Scholarship by German Goverment</p>
+                    <p>Ongoing | 6 Apr - 30 Sept 2024</p>
+
+                    <div class="interaksi">
+                        <div class="area">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                        <div class="area">
+                            <i class="fa-solid fa-paper-plane"></i>
+                        </div>
+                    </div>
+
+                    <div class="on-trending">
+                        <img src="./element/fire.png" alt="fire">
+                        <p>On trending</p>
+                    </div>
+                </div>
+
+                <div class="beasiswa">
+                    <img src="./element/Jardines.png" alt="BCA">
+                    <h4>Jardines Scholarship</h4>
+                    <p>Fully Funded Scholarship by jardines Foundationt</p>
+                    <p>Ongoing | 6 Apr - 30 Sept 2024</p>
+
+                    <div class="interaksi">
+                        <div class="area">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                        <div class="area">
+                            <i class="fa-solid fa-paper-plane"></i>
+                        </div>
+                    </div>
+
+                    <div class="on-trending">
+                        <img src="./element/fire.png" alt="fire">
+                        <p>On trending</p>
+                    </div>
+                </div>
+
+                <div class="beasiswa">
+                    <img src="./element/BUMN.png" alt="BCA">
+                    <h4>Beasiswa Aperti BUMN</h4>
+                    <p>Fully Funded Scholarship by Aperti BUMN</p>
+                    <p>Ongoing | 6 Apr - 30 Sept 2024</p>
+
+                    <div class="interaksi">
+                        <div class="area">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                        <div class="area">
+                            <i class="fa-solid fa-paper-plane"></i>
+                        </div>
+                    </div>
+
+                    <div class="on-trending">
+                        <img src="./element/fire.png" alt="fire">
+                        <p>On trending</p>
+                    </div>
+                </div>
+
+                <div class="beasiswa">
+                    <img src="./element/Tanoto.png" alt="BCA">
+                    <h4>Beasiswa Tanoto Foundation</h4>
+                    <p>Fully Funded Scholarship by Tanoto Foundation</p>
+                    <p>Ongoing | 6 Apr - 30 Sept 2024</p>
+
+                    <div class="interaksi">
+                        <div class="area">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                        <div class="area">
+                            <i class="fa-solid fa-paper-plane"></i>
+                        </div>
+                    </div>
+
+                    <div class="on-trending">
+                        <img src="./element/fire.png" alt="fire">
+                        <p>On trending</p>
+                    </div>
+                </div>
+
+                <div class="beasiswa">
+                    <img src="./element/IDcloudhost.png" alt="BCA">
+                    <h4>Beasiswa IDCloudHost</h4>
+                    <p>Fully Funded Scholarship by ID CloudHost</p>
+                    <p>Ongoing | 6 Apr - 30 Sept 2024</p>
+
+                    <div class="interaksi">
+                        <div class="area">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                        <div class="area">
+                            <i class="fa-solid fa-paper-plane"></i>
+                        </div>
+                    </div>
+
+                    <div class="on-trending">
+                        <img src="./element/fire.png" alt="fire">
+                        <p>On trending</p>
+                    </div>
+                </div>
+
+                <div class="beasiswa">
+                    <img src="./element/Sampoerna.png" alt="BCA">
+                    <h4>Beasiswa Sampoerna</h4>
+                    <p>Merid-based Scholarship by Sampoerna University</p>
+                    <p>Ongoing | 6 Apr - 30 Sept 2024</p>
+
+                    <div class="interaksi">
+                        <div class="area">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                        <div class="area">
+                            <i class="fa-solid fa-paper-plane"></i>
+                        </div>
+                    </div>
+
+                    <div class="on-trending">
+                        <img src="./element/fire.png" alt="fire">
+                        <p>On trending</p>
+                    </div>
+                </div>
+
+                <div class="beasiswa">
+                    <img src="./element/Djarum.png" alt="BCA">
+                    <h4>Beasiswa Djarum Plus</h4>
+                    <p>Fully Funded Scholarship by Djarum Foundation</p>
+                    <p>Ongoing | 6 Apr - 30 Sept 2024</p>
+
+                    <div class="interaksi">
+                        <div class="area">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                        <div class="area">
+                            <i class="fa-solid fa-paper-plane"></i>
+                        </div>
+                    </div>
+
+                    <div class="on-trending">
+                        <img src="./element/fire.png" alt="fire">
+                        <p>On trending</p>
+                    </div>
+                </div>
+
+                <div class="beasiswa">
+                    <img src="./element/CIMB NIAGA.png" alt="BCA">
+                    <h4>Beasiswa CIMB NIAGA</h4>
+                    <p>Fully Funded Scholarship by CIMB NIAGA</p>
+                    <p>Ongoing | 6 Apr - 30 Sept 2024</p>
+
+                    <div class="interaksi">
+                        <div class="area">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                        <div class="area">
+                            <i class="fa-solid fa-paper-plane"></i>
+                        </div>
+                    </div>
+
+                    <div class="on-trending">
+                        <img src="./element/fire.png" alt="fire">
+                        <p>On trending</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="company">
+            <h4>Company</h4>
+            <p>About us</p>
+            <p>Blog</p>
+            <p>Privacy Policy</p>
+            <p>Terms of Service</p>
+            <p>Sitemap</p>
+        </div>
+
+        <div class="contact-us">
+            <h4>Contact us</h4>
+            <p id="alamat">Gedung BLI lantai 8 Jl. Pakuan No. 3</p>
+            <p id="alamat">Sumur Batu, Babakan Madang,Bogor</p>
+            <p id="alamat">Regency, West Java 16180</p>
+            <p id="email">Email : BeasiswaYuk@gmail.com</p>
+        </div>
+
+        <div class="service">
+            <img src="./element/logo.png" alt="BeasiswaYuk!">
+            <p>We provide various scholarship for student from junior high to post graduate, so that everyone can be helped</p>
+        </div>
+
+        <div class="social-media">
+            <h4>Follow us :</h4>
+            <div id="atas">
+                <i class="fab fa-facebook fa-lg"></i>
+                <i class="fab fa-twitter fa-lg"></i>
+                <i class="fab fa-instagram fa-lg"></i>
+            </div>
+
+            <div id="bwh">
+                <i class="fab fa-discord fa-lg"></i>
+                <i class="fab fa-youtube fa-lg"></i>
+                <i class="fab fa-telegram fa-lg"></i>
+            </div>
+        </div>
+    </div>
+
+    <script src="explorejs.js"></script>
+</body>
+</html>

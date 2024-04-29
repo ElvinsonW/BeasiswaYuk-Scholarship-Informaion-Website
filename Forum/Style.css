@@ -1,0 +1,464 @@
+@font-face {
+    font-family: 'League Spartan';
+    src: url('./font/leaguespartan-bold.eot');
+    src: url('./font/leaguespartan-bold.woff2') format('woff2'),
+         url('./font/leaguespartan-bold.woff') format('woff'),
+         url('./font/leaguespartan-bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('./font/Inter-Bold.ttf');
+    src: url('./font/Inter-Regular.ttf'),
+         url('./font/Inter-SemiBold.ttf'),
+         url('./font/Inter-Medium.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inria Sans';
+    src: url('./font/InriaSans-Bold.ttf');
+    src: url('./font/InriaSans-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    position: relative;
+    display: flex;
+    min-width: 900px;
+    height: 300vh;
+    font-family: Inria Sans;
+    scroll-margin-top: 100px;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.header{
+    height: 15%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 0rem;
+    position: fixed;
+    background-color: white;
+    border-bottom: 1px solid black;
+    transition: top 0.5s ease-in-out, opacity 0.3s ease-in-out;
+    z-index: 5;
+}
+
+.header .logo{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 20%;
+    background-size: cover;
+}
+
+.logo img{
+    height: 70%;
+    width: 100%;
+    margin-top: -10px;
+}
+
+.header .mid-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 60%;
+}
+
+.header .right-header{
+    display: flex;
+    height: 100%;
+    width: 20%;
+}
+
+
+.search-bar{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 90%;
+    height: 30%;
+    padding: 5px;
+    border-radius: 50px;
+    background-color: white;
+    border: 1px solid #cacaca;
+    margin-top: 5px;
+}
+
+.search-text{
+    margin-right: 10px;
+    width: 80%;
+    height: 100%;
+    border: none;
+}
+
+.search-text:focus{
+    outline: none;
+    background-color: transparent;
+}
+
+
+.search-bar .search-btn{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 5px;
+    background-color: #FFF712;
+    border-radius: 15px;
+    width: 15%;
+    height: 100%;
+    border: none;
+    font-weight: bolder;
+    box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.5);
+}
+
+.nav{
+    margin-top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    list-style-type: none;
+}
+
+.nav li a{
+    position: relative;
+    font-family: Helvetica;
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    margin: 0 20px;
+}
+
+.nav li a::before {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    height: 2px;
+    width: 0px;
+    background-color: #FFF712;
+    transition: all 0.5s;
+}
+
+.nav li:hover a::before {
+    width: 100%;
+}
+
+.login-btn, .sign-up-btn{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 40%;
+    font-weight: bold;
+    border: none;
+    border-radius: 20px;
+    margin-top: 15px;
+}
+
+.login-btn{
+    width: 35%;
+    margin: 15px 20px 0 10px;
+    color: black;
+    background-color: white;
+    border: 1px solid #cacaca;
+}
+
+.sign-up-btn{
+    width: 41%;
+    color: white;
+    background-color: black;
+}
+
+.container{
+    display: flex;
+    width: 100%;
+    margin-top: 20vh;
+}
+
+.sisi-kiri{
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    width: 29%;
+    height: 100vh;
+    margin-left: 20px;
+}
+
+.profile{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 2px 2px 5px 2px rgba(0,0,0,0.3);
+}
+
+.detail-profile{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    flex-direction: row;
+    width: 85%;
+    height: 120px;
+    padding: 0 27.5px;
+    background-color: #FFF712;
+}
+
+.detail-profile i{
+    transform: translateY(15px);
+    overflow: hidden;
+    font-size: 4rem;
+    padding: 25px 17px 0 17px;
+    border-radius: 50px;
+    border: 1px solid #000;
+    color: #70777F;
+    background-color: #D9DCE1;
+}
+
+.detail-profile .username h2{
+    margin: 0;
+}
+
+.detail-profile .username p{
+    margin: 0;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.profile-info {
+    align-self: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    width: 80%;
+    height: 60px;
+    font-family: Inter;
+}
+
+.profile-info .detail-info span:first-child{
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.profile-info .detail-info span:last-child{
+    color: #706565;
+    font-size: 0.8rem;
+    font-weight: normal;
+}
+
+.trending-topic{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 25px;
+    width: 100%;
+    height: 300px;
+    border-radius: 20px;
+    box-shadow: 0 0 3px 1px rgba(0,0,0,0.3);
+}
+
+.trending-topic .topic{
+    display: flex;
+    align-items: center;
+    width: 80%;
+    padding: 5px 10px;
+    margin-bottom:5px;
+    border-radius: 15px;
+    background-color: #FFF712;
+}
+
+.trending-topic .topic i{
+    font-size: 1.5rem;
+}
+
+.trending-topic .topic .mid-topic p{
+    margin: 0;
+}
+
+.trending-topic .topic .mid-topic{
+    flex: 1;
+    margin-left: 10px;
+}
+
+.trending-topic .topic .mid-topic p:first-child{
+    font-size: 1.1rem;
+}
+
+.trending-topic .topic .mid-topic p:last-child{
+    font-size: 0.7rem;
+    color: #BEBEBE;
+}
+
+.trending-topic .topic .right-topic{
+    display: flex;
+}
+
+.trending-topic .topic .right-topic span{
+    width: 3px;
+    height: 3px;
+    margin-right: 2px;
+    border-radius: 3px;
+    background-color: #000;
+}
+
+.sisi-kanan{
+    width: 64%;
+    margin-left: 25px;
+}
+
+.sisi-kanan .post-tweet{
+    width: 100%;
+}
+
+.sisi-kanan .post-tweet h4{
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+.sisi-kanan .post-tweet .post-input{
+    position: relative;
+    width: 100%;
+}
+
+.sisi-kanan .post-tweet .post-input input{
+    display: flex;
+    align-items: center;
+    width: 94%;
+    height: 30px;
+    padding: 10px 3%;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    box-shadow: 0 0 5px 2px rgba(0,0,0,0.1);
+}
+
+.sisi-kanan .post-tweet .post-input input::placeholder{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #CACACA;
+    transform: translateY(2px);
+}
+
+.sisi-kanan .post-tweet .post-input button{
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    width: 90px;
+    height: 30px;
+    padding: none;
+    border: none;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 1rem;
+    color: #000;
+    background-color: #FFF712;
+    box-shadow: 0 0 3px 1px rgba(0,0,0,0.3);
+}
+
+.trending-forum{
+    width: 100%;
+}
+
+.trending-forum .forum{
+    width: 100%;
+}
+
+.trending-forum .forum .tweet{
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+    padding: 25px 30px;
+    border-radius: 20px;
+    box-shadow: 0 0 5px 2px rgba(0,0,0,0.3);
+}
+
+.trending-forum .forum .tweet .tweet-profile{
+    display: flex;
+    align-items: center;
+}
+
+.trending-forum .forum .tweet .tweet-profile img{
+    width: 60px;
+    height: 60px;
+    margin-right: 15px;
+    padding: 5px;
+    border: 1px solid #000;
+    border-radius: 100%;
+}
+
+.trending-forum .forum .tweet .tweet-profile .tweet-username h2{
+    margin: 0;
+}
+
+.trending-forum .forum .tweet .tweet-profile .tweet-username p{
+    margin: 0;
+    font-weight: bold;
+    font-size: 0.9rem;
+    color: #969090;
+}
+
+.trending-forum .forum .tweet .desc{
+    width: 95%;
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.trending-forum .forum .tweet .tag{
+    position: relative;
+    display: flex;
+    width: 70%;
+    margin: 0;
+    margin-top: 10px;
+}
+
+.trending-forum .forum .tweet .tag p{
+    margin: 0;
+    margin-right: 10px;
+    padding: 5px 10px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    border-radius: 10px;
+    color: #4D4242;
+    background-color: #D9D9D9;
+}
+
+.trending-forum .forum .tweet .tag::after{
+    content: '';
+    position: absolute;
+    top: 40px;
+    border-bottom: 1px solid #000;
+    width: 142%;
+}
+
+.trending-forum .forum .tweet .activities{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.trending-forum .forum .tweet .activities .activity{
+    display: flex;
+    align-items: center;
+    width: 15%;
+}
+
+.trending-forum .forum .tweet .activities .activity i{
+    font-size: 1.25rem;
+    margin-right: 7px;
+}
+
+.trending-forum .forum .tweet .activities .activity p{
+    margin: 0;
+}
