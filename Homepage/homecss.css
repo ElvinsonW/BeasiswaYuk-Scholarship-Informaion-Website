@@ -160,7 +160,7 @@ body{
 }
 
 .profile-btn{
-    display: flex;
+    display: none;
     width: 65%;
     height: 30px;
     transform: translateY(10px);
