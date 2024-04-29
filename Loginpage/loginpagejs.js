@@ -40,6 +40,7 @@ login_btn.addEventListener("click",function(){
         pass_error.innerHTML = "*Password must at least contains 1 digit, 1 capital letter, and 1 lowercase letter"
     }
     else{
+        sessionStorage.setItem('isLoggedIn', 'true');
         window.location.href = "../index.html"
     }
 })
@@ -64,5 +65,6 @@ function validatePassword(input){
 
     return containDigit && containlowercase && containCapital
 }
+
 
 

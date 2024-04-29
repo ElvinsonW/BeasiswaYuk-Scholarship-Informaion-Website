@@ -45,9 +45,10 @@ body {
 }
 
 .header .right-header{
-    display: flex;
-    height: 100%;
-    width: 20%;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 20%;
 }
 
 
@@ -124,7 +125,7 @@ body {
     width: 100%;
 }
 
-.login-btn, .sign-up-btn{
+.login-btn, .sign-up-btn, .profile-btn{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -148,6 +149,15 @@ body {
     width: 41%;
     color: white;
     background-color: black;
+}
+
+.profile-btn{
+  display: flex;
+  width: 65%;
+  height: 30px;
+  transform: translateY(10px);
+  color: black;
+  background-color: #FFF712;
 }
 
 .container{

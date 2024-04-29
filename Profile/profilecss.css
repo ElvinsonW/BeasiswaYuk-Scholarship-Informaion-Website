@@ -51,6 +51,7 @@ h1{
 
 .header .right-header{
     display: flex;
+    justify-content: center;
     height: 100%;
     width: 20%;
 }
@@ -129,7 +130,7 @@ h1{
     width: 100%;
 }
 
-.login-btn, .sign-up-btn{
+.login-btn, .sign-up-btn, .profile-btn{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -153,6 +154,16 @@ h1{
     width: 41%;
     color: white;
     background-color: black;
+}
+
+.profile-btn{
+    display: none;
+    width: 65%;
+    height: 30px;
+    transform: translateY(10px);
+    color: black;
+    background-color: #FFF712;
+    border: none;
 }
 
 .container{
@@ -255,6 +266,7 @@ h1{
 
 .right-title div{
     display: flex;
+    justify-content: space-between;
     align-items: center;
     gap: 20px;
     width: 100%;

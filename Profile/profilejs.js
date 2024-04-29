@@ -151,7 +151,36 @@ ratedBtn.addEventListener('click', () => {
 showContent(historyBtn,scholarshipContent);
 riwayatTitle.style.display = "flex"
 
+let seemoreBtn = document.getElementById("see-more-btn")
+
+seemoreBtn.addEventListener("click", function(){
+  if(riwayatTitle.style.display === "flex"){
+    window.location.href = "../Riwayat Pencarian/riwayat.html"
+  }
+  else if(favTitle.style.display === "flex"){
+    window.location.href = "../Disukai/disukai.html"
+  }
+  else if(ratedTitle.style.display === "flex"){
+    window.location.href = "../Dirating/dirating.html"
+  }
+})
+
 let loginBtn = document.querySelector(".login-btn")
 loginBtn.addEventListener("click",function(){
-  window.location.href = "../Loginpage/loginpage.html"
+  window.location.href = "loginpage.html"
+})
+
+let signupBtn = document.getElementById("sign-up-btn")
+let profileBtn = document.getElementById("profile-btn")
+document.addEventListener("DOMContentLoaded", function() {
+  if (sessionStorage.getItem('isLoggedIn') === 'true') {
+    loginBtn.style.display = "none"
+    signupBtn.style.display = "none"
+  
+    profileBtn.style.display = "block"
+  }
+})
+
+profileBtn.addEventListener("click",function(){
+  window.location.href = "./Profile/profile.html"
 })
