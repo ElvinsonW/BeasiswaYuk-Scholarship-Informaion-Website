@@ -140,6 +140,7 @@ h1{
     border: none;
     border-radius: 20px;
     margin-top: 15px;
+    transform: translateY(10px);
 }
 
 .login-btn{
@@ -160,7 +161,6 @@ h1{
     display: none;
     width: 65%;
     height: 30px;
-    transform: translateY(10px);
     color: black;
     background-color: #FFF712;
     border: none;
