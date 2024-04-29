@@ -15,7 +15,7 @@ window.addEventListener("scroll", function() {
 
 const carousel = document.querySelector(".slider")
 const arrowBtns = document.querySelectorAll(".trending-slider i");
-const firstCardWidth = carousel.querySelector(".card").offsetWidth + 40;
+const firstCardWidth = carousel.querySelector(".card").offsetWidth + 100;
 
 let click;
 
@@ -31,20 +31,16 @@ document.querySelector("#point-1").style.backgroundColor = "black";
 
 let previousPointIndex = 1;
 
-const infiniteScroll = () => {
+const scrollPoint = () => {
   document.querySelector("#point-" + previousPointIndex).style.backgroundColor = ""; // Reset color to default
 
-  const currentPointIndex = Math.round((carousel.scrollLeft / 360) + 1);
+  const currentPointIndex = Math.round(((carousel.scrollLeft+100) / 370));
   document.querySelector("#point-" + currentPointIndex).style.backgroundColor = "black";
 
   previousPointIndex = currentPointIndex;
-
-  if (Math.ceil(carousel.scrollLeft) >= carousel.scrollWidth - carousel.offsetWidth) {
-      carousel.scrollLeft = 0;
-  }
 };
 
-carousel.addEventListener("scroll",infiniteScroll);
+carousel.addEventListener("scroll",scrollPoint);
 
 
 let exploreBtn = document.querySelector(".left-banner button")

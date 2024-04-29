@@ -20,7 +20,7 @@ login_btn.addEventListener("click", function(){
 
 const carousel = document.querySelector(".slider")
 const arrowBtns = document.querySelectorAll(".scholarship-slider i");
-const firstCardWidth = carousel.querySelector(".card").offsetWidth + 40;
+const firstCardWidth = carousel.querySelector(".card").offsetWidth + 450;
 
 let click;
 
