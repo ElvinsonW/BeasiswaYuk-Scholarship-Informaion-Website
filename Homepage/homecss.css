@@ -47,6 +47,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 20px;
     height: auto;
     width: 60%;
 }
@@ -69,7 +70,6 @@ body{
     border-radius: 50px;
     background-color: white;
     border: 1px solid #cacaca;
-    margin-top: 5px;
 }
 
 .search-text{
@@ -101,7 +101,6 @@ body{
 }
 
 .nav{
-    margin-top: 10px;
     display: flex;
     justify-content: center;
     align-items: flex-end;
