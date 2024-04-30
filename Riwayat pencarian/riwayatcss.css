@@ -95,11 +95,11 @@ body{
 }
 
 .nav{
+    gap: 40px;
     display: flex;
     justify-content: center;
     align-items: flex-end;
     list-style-type: none;
-    gap: 40px;
 }
 
 .nav li a{
