@@ -155,7 +155,7 @@ let seemoreBtn = document.getElementById("see-more-btn")
 
 seemoreBtn.addEventListener("click", function(){
   if(riwayatTitle.style.display === "flex"){
-    window.location.href = "../Riwayat Pencarian/riwayat.html"
+    window.location.href = "../Riwayat pencarian/riwayat.html"
   }
   else if(favTitle.style.display === "flex"){
     window.location.href = "../Disukai/disukai.html"

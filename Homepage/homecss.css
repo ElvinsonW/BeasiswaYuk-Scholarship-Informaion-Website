@@ -175,7 +175,7 @@ body{
 .container{
     width: 100%;
     height: 470vh;
-    margin-top: 80px;
+    margin-top: 110px;
 }
 
 .banner{
@@ -183,13 +183,18 @@ body{
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 90vh;
+    height: 50vh;
+    padding: 15vh 0;
 }
 
 .left-banner{
-    width: 40%;
-    height: 90%;
-    margin: 40px 0 0 0 ;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+}
+
+.left-banner h1, .left-banner h3{
+    margin: 0;
 }
 
 .right-banner{
@@ -201,19 +206,15 @@ body{
 }
 
 .right-banner img{
-    height: 130%;
-    width: 140%;
-}
-
-.left-banner h3, .left-banner h1, .left-banner button{
-    margin: 5px 0px 5px 5px;
+    height: 650px;
+    width: auto;
+    transform: translateY(-30px);
 }
 
 .left-banner h1{
     font-size: 5.3rem;
     width: 100%;
     height: auto;
-    margin-top: 50px;
 }
 
 .left-banner h3{
