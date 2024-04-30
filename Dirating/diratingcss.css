@@ -1,4 +1,6 @@
 body{
+    display: flex;
+    align-items: center;
     position: relative;
     height: 280vh;
     display: flex;
@@ -161,6 +163,7 @@ body{
 }
 
 .container{
+    position: relative;
     display: flex;
     flex-direction: column;
     width: 80%;
@@ -168,6 +171,14 @@ body{
     padding: 0 10%;
     margin-top: 160px;
     gap: 50px;
+}
+
+.back{
+    position: absolute;
+    padding: 10px 25px;
+    left: -95px;
+    border-radius: 50px;
+    background-color: #FFF712;
 }
 
 .heading-title{
