@@ -35,6 +35,6 @@ profileBtn.addEventListener("click",function(){
 })
 
 let backBtn = document.getElementById("back")
-backBtn.addEventListener("back",function(){
+backBtn.addEventListener("click",function(){
   window.location.href = "../Profile/profile.html"
 })
