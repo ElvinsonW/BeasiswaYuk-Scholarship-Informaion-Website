@@ -14,8 +14,8 @@ window.addEventListener("scroll", function() {
   lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; 
 }, false);
 
-let login_btn = document.querySelector(".login-btn")
-login_btn.addEventListener("click", function(){
+let loginBtn = document.querySelector(".login-btn")
+loginBtn.addEventListener("click",function(){
   window.location.href = "../Loginpage/loginpage.html"
 })
 
@@ -26,10 +26,10 @@ document.addEventListener("DOMContentLoaded", function() {
     loginBtn.style.display = "none"
     signupBtn.style.display = "none"
   
-    profileBtn.style.display = "none"
+    profileBtn.style.display = "block"
   }
 })
 
 profileBtn.addEventListener("click",function(){
-  window.location.href = "./Profile/profile.html"
+  window.location.href = "../Profile/profile.html"
 })

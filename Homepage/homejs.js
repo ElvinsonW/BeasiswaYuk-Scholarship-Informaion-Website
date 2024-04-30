@@ -57,12 +57,12 @@ loginBtn.addEventListener("click",function(){
 
 let bca = document.getElementById("bca")
 bca.addEventListener("click",function(){
-  window.location.href = "./Detail Beasiswa/detail.html"
+  window.location.href = "../Detail Beasiswa/detail.html"
 })
 
 let seemoreBtn = document.getElementById("see-more")
 seemoreBtn.addEventListener("click",function(){
-  window.location.href = "./ExplorePage/explore.html";
+  window.location.href = "../ExplorePage/explore.html";
 })
 
 let signupBtn = document.getElementById("sign-up-btn")
@@ -77,5 +77,5 @@ document.addEventListener("DOMContentLoaded", function() {
 })
 
 profileBtn.addEventListener("click",function(){
-  window.location.href = "./Profile/profile.html"
+  window.location.href = "../Profile/profile.html"
 })
