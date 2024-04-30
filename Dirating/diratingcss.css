@@ -99,6 +99,7 @@ body{
     justify-content: center;
     align-items: flex-end;
     list-style-type: none;
+    gap: 40px;
 }
 
 .nav li a{

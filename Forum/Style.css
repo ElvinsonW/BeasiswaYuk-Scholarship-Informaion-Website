@@ -126,17 +126,17 @@ body {
     justify-content: center;
     align-items: flex-end;
     list-style-type: none;
+    gap: 40px;
 }
-  
-  .nav li a{
-      position: relative;
-      font-family: Helvetica;
-      font-size: 0.85rem;
-      font-weight: bold;
-      color: black;
-      text-decoration: none;
-      margin: 0 20px;
-  }
+
+.nav li a{
+    position: relative;
+    font-family: Helvetica;
+    font-size: 0.85rem;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+}
   
   .nav li a::before {
       content: '';
