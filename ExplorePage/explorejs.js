@@ -79,11 +79,6 @@ loginBtn.addEventListener("click",function(){
   window.location.href = "../Loginpage/loginpage.html"
 })
 
-let bca = document.getElementById("bca")
-bca.addEventListener("click",function(){
-  window.location.href = "../Detail Beasiswa/detail.html"
-})
-
 let signupBtn = document.getElementById("sign-up-btn")
 let profileBtn = document.getElementById("profile-btn")
 document.addEventListener("DOMContentLoaded", function() {
@@ -97,4 +92,19 @@ document.addEventListener("DOMContentLoaded", function() {
 
 profileBtn.addEventListener("click",function(){
   window.location.href = "../Profile/profile.html"
+})
+
+let shareBtn = document.querySelectorAll("#share-btn")
+
+shareBtn.forEach(function(btn){
+  btn.addEventListener("click", function(){
+    if(!btn.classList.contains("yellow")){
+      btn.classList.add("yellow")
+      btn.style.color = "#FEC225"
+    }
+    else{
+      btn.classList.remove("yellow")
+      btn.style.color = "#9CA0B0"
+    }
+  })
 })

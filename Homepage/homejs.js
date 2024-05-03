@@ -27,22 +27,6 @@ arrowBtns.forEach(btn => {
   });
 });
 
-document.querySelector("#point-1").style.backgroundColor = "black";
-
-let previousPointIndex = 1;
-
-const scrollPoint = () => {
-  document.querySelector("#point-" + previousPointIndex).style.backgroundColor = ""; // Reset color to default
-
-  const currentPointIndex = Math.round(((carousel.scrollLeft+100) / 370));
-  document.querySelector("#point-" + currentPointIndex).style.backgroundColor = "black";
-
-  previousPointIndex = currentPointIndex;
-};
-
-carousel.addEventListener("scroll",scrollPoint);
-
-
 let exploreBtn = document.querySelector(".left-banner button")
 
 exploreBtn.addEventListener("click", function(){

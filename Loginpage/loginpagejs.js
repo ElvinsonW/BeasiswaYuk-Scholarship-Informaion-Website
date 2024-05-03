@@ -16,7 +16,9 @@ eyeicon.addEventListener("click",function(){
 
 let login_btn = document.querySelector("#login-btn")
 
-login_btn.addEventListener("click",function(){
+login_btn.addEventListener("click",function(e){
+
+    e.preventDefault()
     let input_email = document.querySelector("#email")
     let input_pass = document.querySelector("#pass")
     let email_error = document.querySelector(".email-error")
@@ -24,7 +26,6 @@ login_btn.addEventListener("click",function(){
 
     if(input_email.value == "" || input_email.value == undefined){
         email_error.style.display = "block"
-        console.log(input_email.value)
         email_error.innerHTML = "*Email must be filled"
     }
     else if(!input_email.value.includes("@") || !input_email.value.endsWith(".com")){

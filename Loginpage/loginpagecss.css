@@ -24,7 +24,6 @@ body{
 }
 
 .left-container .wisuda{
-    /* transform: translateY(85px); */
     width: 110%;
 }
 
@@ -59,7 +58,6 @@ body{
 
 .login-form{
     width: 100%;
-    height: 150px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -72,12 +70,11 @@ body{
     position: relative;
     display: flex;
     width: 100%;
-    height: 60px;
-    /* text-indent: 100px; */
 }
 
 .input-email{
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    margin-top: 10px;
 }
 
 .input-pass i{
@@ -85,6 +82,7 @@ body{
     right: 5px;
     top: 13px;
     color: #666666;
+    cursor: pointer;
 }
 
 .input input{
@@ -127,21 +125,22 @@ body{
     color: red;
 }
 
-.form-box a{
+.login-form a{
     align-self: flex-start;
-    /* margin-top: 5px; */
+    margin-top: 15px;
     color: #000;
 }
 
-.form-box #login-btn{
+.login-form #login-btn{
     width: 100%;
     height: 40px;
     font-size: 1rem;
     font-weight: bold;
     border: none;
     border-radius: 20px;
-    margin-top: 20px;
     background-color: #FFF712;
+    margin-top: 20px;
+    cursor: pointer;
 }
 
 .other-btn{
@@ -149,7 +148,7 @@ body{
     display: grid;
     grid-auto-flow: column;
     gap: 10px;
-    margin-top: 20px;
+    margin-top: 25px;
 }
 
 .other-btn .social-media{
@@ -160,6 +159,7 @@ body{
     height: 40px;
     border: 1.5px solid #000;
     border-radius: 25px;
+    cursor: pointer;
 }
 
 .other-btn .social-media img{

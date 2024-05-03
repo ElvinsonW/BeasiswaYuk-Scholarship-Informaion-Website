@@ -86,8 +86,6 @@ body{
 
 
 .search-bar .search-btn{
-    display: flex;
-    justify-content: space-evenly;
     align-items: center;
     padding: 5px;
     background-color: #FFF712;
@@ -95,9 +93,21 @@ body{
     width: 15%;
     height: 100%;
     border: none;
+    box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.search-bar .search-btn a{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
     font-size: 0.9rem;
     font-weight: bolder;
-    box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.5);
+    color: #000000;
+    cursor: pointer;
 }
 
 .nav{
@@ -132,6 +142,20 @@ body{
     width: 100%;
 }
 
+#home-nav{
+    color: #FEC225;
+}
+
+.right-header button a{
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
 .login-btn, .sign-up-btn, .profile-btn{
     display: flex;
     align-items: center;
@@ -143,6 +167,7 @@ body{
     border-radius: 20px;
     margin-top: 15px;
     transform: translateY(10px);
+    cursor: pointer;
 }
 
 .login-btn{
@@ -153,21 +178,36 @@ body{
     border: 1px solid #cacaca;
 }
 
+.login-btn a,.profile-btn a{
+    color: #000000;
+}
+
+
 .sign-up-btn{
     width: 41%;
     color: white;
     background-color: black;
 }
 
+.sign-up-btn a{
+    color: #FFF712;
+}
+
 .profile-btn{
     display: none;
     width: 65%;
-    height: 30px;
+    height: 35px;
+    font-size: 0.9rem;
     color: black;
     background-color: #FFF712;
+    transform: translateY(15px);
 }
 
-.profile-btn i{
+.right-header .profile-btn a{
+    gap: 10px;
+}
+
+.profile-btn a i{
     margin-right: 5px;
 }
 
@@ -207,7 +247,7 @@ body{
 .right-banner img{
     height: 650px;
     width: auto;
-    transform: translateY(-30px);
+    transform: translateY(-15px);
 }
 
 .left-banner h1{
@@ -233,10 +273,11 @@ body{
     border-radius: 20px;
     background-color: #FFF712;
     box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
 }
 
 
-.left-banner button p{
+.left-banner button a p{
     font-size: 1rem;
     font-weight: bolder;
     margin-right: 10px;
@@ -244,7 +285,20 @@ body{
 
 .left-banner button:hover{
     background-color: #000000;
+}
+
+.left-banner button:hover a{
     color: #FFF712;
+}
+
+.left-banner button a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #000000;
 }
 
 .ticker-tap {
@@ -313,10 +367,19 @@ body{
     border-radius: 30px;
 }
 
+.trending-title button a{
+    text-decoration: none;
+    color: #000000;
+}
+
 .trending-page button:hover{
     color: #FFF712;
     background-color: black;
     box-shadow: 0 0 7px 0 rgba(255,247,18);
+}
+
+.trending-page button:hover a{
+    color: #FFF712;
 }
 
 .trending-slider{
@@ -343,6 +406,8 @@ body{
 }
 
 .trending-slider i{
+    position: relative;
+    z-index: 2;
     height: 50px;
     width: 50px;
     background-color: black;
@@ -366,6 +431,12 @@ body{
     height: 100%;
     border: none;
     border-radius: 20px;
+    transition: all 0.2s ease;
+}
+
+.card:hover{
+    filter: brightness(0.4);
+    z-index: 1;
 }
 
 .slider-point{
@@ -432,12 +503,14 @@ body{
     font-size: 8rem;
     font-weight: bolder;
     margin: 10px;
-    transform: translate(70px,10px);
+    transform: translate(100px,15px);
 }
 
 .provide-desc h1:last-child{
     align-self: flex-end;
     margin: 0;
+    font-size: 2rem;
+    transform: translate(-30px,5px);
 }
 
 .educational-page{
@@ -497,7 +570,7 @@ body{
 }
 
 .level-list .level:hover{
-    transform: scale(1.4);
+    transform: scale(1.2);
 }
 
 .testimoni-page{
@@ -745,7 +818,6 @@ body{
     .right-header{
         flex-direction: column;
         justify-content: center;
-
     }
     .login-btn{
         width: 40%;

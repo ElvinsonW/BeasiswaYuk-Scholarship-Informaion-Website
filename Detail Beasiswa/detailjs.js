@@ -57,3 +57,44 @@ document.addEventListener("DOMContentLoaded", function() {
 profileBtn.addEventListener("click",function(){
   window.location.href = "../Profile/profile.html"
 })
+
+let saveBtn = document.getElementById("save-btn");
+let isClicked = false;
+
+saveBtn.addEventListener("click", function() {
+  if (!isClicked) {
+    saveBtn.style.color = "#2F88F0";
+    isClicked = true;
+  } else {
+    saveBtn.style.color = "#000000";
+    isClicked = false;
+  }
+});
+
+
+let likeBtn = document.getElementById("like-btn");
+let isClickedlike = false;
+
+likeBtn.addEventListener("click", function() {
+  if (!isClickedlike) {
+    likeBtn.style.color = "#FF0000";
+    isClickedlike = true;
+  } else {
+    likeBtn.style.color = "#000000";
+    isClickedlike = false;
+  }
+});
+
+let shareBtn = document.getElementById("share-btn");
+let isClickedshare = false;
+
+shareBtn.addEventListener("click", function() {
+  if (!isClickedshare) {
+    shareBtn.style.color = "#FEC225";
+    isClickedshare = true;
+  } else {
+    shareBtn.style.color = "#000000";
+    isClickedshare = false;
+  }
+});
+

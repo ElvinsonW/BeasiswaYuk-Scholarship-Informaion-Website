@@ -17,50 +17,49 @@
             <form class="search-bar">
                 <input type="text" class="search-text" id=  "search-text">
                 <button class="search-btn">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                    Search
+                    <a href="">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        Search
+                    </a>
                 </button>
             </form>
     
             <div class="nav">
                 <li><a href="../index.html">Home</a></li>
                 <li><a href="../ExplorePage/explore.html">Scholarship</a></li>
-                <li><a href="Index.html">Forum</a></li>
+                <li><a href="Index.html" id="forum-nav">Forum</a></li>
             </div>
         </div>
         
         <div class="right-header">
             <button class="login-btn">
-                Login
-                <i class="fa-solid fa-arrow-right-to-bracket"></i>
+                <a href="../Loginpage/loginpage.html">
+                    Login
+                    <i class="fa-solid fa-arrow-right-to-bracket"></i>
+                </a>
             </button>
     
             <button class="sign-up-btn" id="sign-up-btn">
-                Sign Up
-                <i class="fa-solid fa-user-plus"></i>
+                <a href="">
+                    Sign Up
+                    <i class="fa-solid fa-user-plus"></i>
+                </a>
             </button>
 
             <button class="profile-btn" id="profile-btn">
-                <i class="fa-solid fa-user"></i>
-                FransiscaHan
+                <a href="../Profile/profile.html">
+                    <i class="fa-solid fa-user"></i>
+                    FransiscaHan
+                </a>
             </button>
         </div>
     </div>
 
     <div class="container">
-
         <div class = "sisi-kiri">
-            <!-- <div class="back-search">
-                <i class="fa-solid fa-angle-left"></i>
-                <div class="searchbar">
-                    <input type="text" placeholder="Search...">
-                    <i class="fa-regular fa-magnifying-glass"></i>
-                </div>
-            </div> -->
-    
             <div class="profile">
                 <div class = "detail-profile">
-                    <i class="fa-solid fa-user"></i>
+                    <img src="./element/profilefel.png" alt="profile">
                     <div class="username">
                         <h2>Fransiska Felicia</h2>
                         <p>@fransiscahan</p>
@@ -90,8 +89,13 @@
                         <p>Beasiswa2024</p>
                         <p>10,789 posts</p>
                     </div>
-                    <div class="right-topic">
-                        <span></span><span></span><span></span>
+                </div>
+    
+                <div class="topic">
+                    <i class="fa-solid fa-hashtag"></i>
+                    <div class="mid-topic">
+                        <p>Beasiswa2024</p>
+                        <p>10,789 posts</p>
                     </div>
                 </div>
     
@@ -101,9 +105,6 @@
                         <p>Beasiswa2024</p>
                         <p>10,789 posts</p>
                     </div>
-                    <div class="right-topic">
-                        <span></span><span></span><span></span>
-                    </div>
                 </div>
     
                 <div class="topic">
@@ -111,20 +112,6 @@
                     <div class="mid-topic">
                         <p>Beasiswa2024</p>
                         <p>10,789 posts</p>
-                    </div>
-                    <div class="right-topic">
-                        <span></span><span></span><span></span>
-                    </div>
-                </div>
-    
-                <div class="topic">
-                    <i class="fa-solid fa-hashtag"></i>
-                    <div class="mid-topic">
-                        <p>Beasiswa2024</p>
-                        <p>10,789 posts</p>
-                    </div>
-                    <div class="right-topic">
-                        <span></span><span></span><span></span>
                     </div>
                 </div>
             </div>
@@ -135,7 +122,7 @@
                 <h4>Tweet Yours</h4>
                 <div class="post-input">
                     <input type="text" placeholder="What's on your mind?">
-                    <button>Post</button>
+                    <button id="post-btn">Post</button>
                 </div>
             </div>
             <div class="trending-forum">
@@ -143,7 +130,7 @@
                 <div class="forum">
                     <div class="tweet">
                         <div class="tweet-profile">
-                            <img src="./element/profile_picture.jpg" alt="profile">
+                            <img src="./element/profilevic.png" alt="profile">
                             <div class="tweet-username">
                                 <h2>Victoria Simanjaya</h2>
                                 <p>@vctrias.smn</p>
@@ -158,19 +145,19 @@
                             <p>Fully Funded</p>
                         </div>
                         <div class="activities">
-                            <div class="activity">
+                            <div class="activity" id="like-btn">
                                 <i class="fa-solid fa-heart"></i>
                                 <p>100 likes</p>
                             </div>
-                            <div class="activity">
-                                <i class="fa-solid fa-share-nodes"></i>
+                            <div class="activity" id="share-btn">
+                                <i class="fa-solid fa-paper-plane"></i>
                                 <p>54 shares</p>
                             </div>
-                            <div class="activity">
+                            <div class="activity" id="reply-btn">
                                 <i class="fa-solid fa-reply"></i>
                                 <p>30 replies</p>
                             </div>
-                            <div class="activity">
+                            <div class="activity" id="bookmark-btn">
                                 <i class="fa-solid fa-bookmark"></i>
                                 <p>15 saves</p>
                             </div>  
@@ -179,7 +166,7 @@
 
                     <div class="tweet">
                         <div class="tweet-profile">
-                            <img src="./element/profile_picture.jpg" alt="profile">
+                            <img src="./element/profileel.png" alt="profile">
                             <div class="tweet-username">
                                 <h2>Elvinson Wijaya</h2>
                                 <p>@ElvinsonWijaya1401</p>
@@ -193,19 +180,19 @@
                             <p>Swasta</p>
                         </div>
                         <div class="activities">
-                            <div class="activity">
+                            <div class="activity" id="like-btn">
                                 <i class="fa-solid fa-heart"></i>
                                 <p>100 likes</p>
                             </div>
-                            <div class="activity">
-                                <i class="fa-solid fa-share-nodes"></i>
+                            <div class="activity" id="share-btn">
+                                <i class="fa-solid fa-paper-plane"></i>
                                 <p>54 shares</p>
                             </div>
-                            <div class="activity">
+                            <div class="activity" id="reply-btn">
                                 <i class="fa-solid fa-reply"></i>
                                 <p>30 replies</p>
                             </div>
-                            <div class="activity">
+                            <div class="activity" id="bookmark-btn">
                                 <i class="fa-solid fa-bookmark"></i>
                                 <p>15 saves</p>
                             </div>  
@@ -214,7 +201,7 @@
 
                     <div class="tweet">
                         <div class="tweet-profile">
-                            <img src="./element/profile_picture.jpg" alt="profile">
+                            <img src="./element/profileiat.png" alt="profile">
                             <div class="tweet-username">
                                 <h2>Richard Manuel</h2>
                                 <p>@Richardganteng</p>
@@ -228,19 +215,19 @@
                             <p>Swasta</p>
                         </div>
                         <div class="activities">
-                            <div class="activity">
+                            <div class="activity" id="like-btn">
                                 <i class="fa-solid fa-heart"></i>
                                 <p>100 likes</p>
                             </div>
-                            <div class="activity">
-                                <i class="fa-solid fa-share-nodes"></i>
+                            <div class="activity" id="share-btn">
+                                <i class="fa-solid fa-paper-plane"></i>
                                 <p>54 shares</p>
                             </div>
-                            <div class="activity">
+                            <div class="activity" id="reply-btn">
                                 <i class="fa-solid fa-reply"></i>
                                 <p>30 replies</p>
                             </div>
-                            <div class="activity">
+                            <div class="activity" id="bookmark-btn">
                                 <i class="fa-solid fa-bookmark"></i>
                                 <p>15 saves</p>
                             </div>  
@@ -249,7 +236,7 @@
 
                     <div class="tweet">
                         <div class="tweet-profile">
-                            <img src="./element/profile_picture.jpg" alt="profile">
+                            <img src="./element/profileivy.jpeg" alt="profile">
                             <div class="tweet-username">
                                 <h2>Steffie Adriana</h2>
                                 <p>@SteffieAdriannaaaa</p>
@@ -263,19 +250,19 @@
                             <p>LPDP</p>
                         </div>
                         <div class="activities">
-                            <div class="activity">
+                            <div class="activity" id="like-btn">
                                 <i class="fa-solid fa-heart"></i>
                                 <p>100 likes</p>
                             </div>
-                            <div class="activity">
-                                <i class="fa-solid fa-share-nodes"></i>
+                            <div class="activity" id="share-btn">
+                                <i class="fa-solid fa-paper-plane"></i>
                                 <p>54 shares</p>
                             </div>
-                            <div class="activity">
+                            <div class="activity" id="reply-btn">
                                 <i class="fa-solid fa-reply"></i>
                                 <p>30 replies</p>
                             </div>
-                            <div class="activity">
+                            <div class="activity" id="bookmark-btn">
                                 <i class="fa-solid fa-bookmark"></i>
                                 <p>15 saves</p>
                             </div>  
@@ -284,7 +271,7 @@
 
                     <div class="tweet">
                         <div class="tweet-profile">
-                            <img src="./element/profile_picture.jpg" alt="profile">
+                            <img src="./element/profilevic.png" alt="profile">
                             <div class="tweet-username">
                                 <h2>Victoria Simanjaya</h2>
                                 <p>@vctrias.smn</p>
@@ -299,19 +286,19 @@
                             <p>Fully Funded</p>
                         </div>
                         <div class="activities">
-                            <div class="activity">
+                            <div class="activity" id="like-btn">
                                 <i class="fa-solid fa-heart"></i>
                                 <p>100 likes</p>
                             </div>
-                            <div class="activity">
-                                <i class="fa-solid fa-share-nodes"></i>
+                            <div class="activity" id="share-btn">
+                                <i class="fa-solid fa-paper-plane"></i>
                                 <p>54 shares</p>
                             </div>
-                            <div class="activity">
+                            <div class="activity" id="reply-btn">
                                 <i class="fa-solid fa-reply"></i>
                                 <p>30 replies</p>
                             </div>
-                            <div class="activity">
+                            <div class="activity" id="bookmark-btn">
                                 <i class="fa-solid fa-bookmark"></i>
                                 <p>15 saves</p>
                             </div>  
@@ -320,7 +307,7 @@
 
                     <div class="tweet">
                         <div class="tweet-profile">
-                            <img src="./element/profile_picture.jpg" alt="profile">
+                            <img src="./element/profileel.png" alt="profile">
                             <div class="tweet-username">
                                 <h2>Elvinson Wijaya</h2>
                                 <p>@ElvinsonWijaya1401</p>
@@ -334,19 +321,19 @@
                             <p>Swasta</p>
                         </div>
                         <div class="activities">
-                            <div class="activity">
+                            <div class="activity" id="like-btn">
                                 <i class="fa-solid fa-heart"></i>
                                 <p>100 likes</p>
                             </div>
-                            <div class="activity">
-                                <i class="fa-solid fa-share-nodes"></i>
+                            <div class="activity" id="share-btn">
+                                <i class="fa-solid fa-paper-plane"></i>
                                 <p>54 shares</p>
                             </div>
-                            <div class="activity">
+                            <div class="activity" id="reply-btn">
                                 <i class="fa-solid fa-reply"></i>
                                 <p>30 replies</p>
                             </div>
-                            <div class="activity">
+                            <div class="activity" id="bookmark-btn">
                                 <i class="fa-solid fa-bookmark"></i>
                                 <p>15 saves</p>
                             </div>  
@@ -355,7 +342,7 @@
 
                     <div class="tweet">
                         <div class="tweet-profile">
-                            <img src="./element/profile_picture.jpg" alt="profile">
+                            <img src="./element/profileiat.png" alt="profile">
                             <div class="tweet-username">
                                 <h2>Richard Manuel</h2>
                                 <p>@Richardganteng</p>
@@ -369,19 +356,19 @@
                             <p>Swasta</p>
                         </div>
                         <div class="activities">
-                            <div class="activity">
+                            <div class="activity" id="like-btn">
                                 <i class="fa-solid fa-heart"></i>
                                 <p>100 likes</p>
                             </div>
-                            <div class="activity">
-                                <i class="fa-solid fa-share-nodes"></i>
+                            <div class="activity" id="share-btn">
+                                <i class="fa-solid fa-paper-plane"></i>
                                 <p>54 shares</p>
                             </div>
-                            <div class="activity">
+                            <div class="activity" id="reply-btn">
                                 <i class="fa-solid fa-reply"></i>
                                 <p>30 replies</p>
                             </div>
-                            <div class="activity">
+                            <div class="activity" id="bookmark-btn">
                                 <i class="fa-solid fa-bookmark"></i>
                                 <p>15 saves</p>
                             </div>  
@@ -391,6 +378,46 @@
             </div>
         </div>
     </div>
+
+    <div class="footer">
+        <div class="company">
+            <h4>Company</h4>
+            <p>About us</p>
+            <p>Blog</p>
+            <p>Privacy Policy</p>
+            <p>Terms of Service</p>
+            <p>Sitemap</p>
+        </div>
+
+        <div class="contact-us">
+            <h4>Contact us</h4>
+            <p id="alamat">Gedung BLI lantai 8 Jl. Pakuan No. 3</p>
+            <p id="alamat">Sumur Batu, Babakan Madang,Bogor</p>
+            <p id="alamat">Regency, West Java 16180</p>
+            <p id="email">Email : BeasiswaYuk@gmail.com</p>
+        </div>
+
+        <div class="service">
+            <img src="./element/logo.png" alt="BeasiswaYuk!">
+            <p>We provide various scholarship for student from junior high to post graduate, so that everyone can be helped</p>
+        </div>
+
+        <div class="social-media">
+            <h4>Follow us :</h4>
+            <div id="atas">
+                <i class="fab fa-facebook fa-lg"></i>
+                <i class="fab fa-twitter fa-lg"></i>
+                <i class="fab fa-instagram fa-lg"></i>
+            </div>
+
+            <div id="bwh">
+                <i class="fab fa-discord fa-lg"></i>
+                <i class="fab fa-youtube fa-lg"></i>
+                <i class="fab fa-telegram fa-lg"></i>
+            </div>
+        </div>
+    </div>
+
     <script src="Script.js"></script>
 </body>
 </html>
