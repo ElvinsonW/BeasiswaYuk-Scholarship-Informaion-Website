@@ -279,9 +279,11 @@ body {
 }
 
 #save-btn {
+  position: relative;
   color: #9CA0B0;
   transition: color 0.3s ease;
 }
+
 #save-btn:hover {
   color: #2F88F0;
 }
@@ -311,6 +313,42 @@ body {
 
 #rating-btn:hover{
   color: #FEC225;
+}
+
+#website a{
+  color: #9CA0B0;
+  transition: color 0.3s ease;
+}
+
+.act-btn{
+  position: relative;
+  transition: all 0.5s ease;
+}
+
+.act-btn .desc{
+  display: none;
+  position: absolute;
+  top: -40px;
+}
+
+.act-btn:hover .desc{
+  display: block;
+}
+
+#like-btn .desc{
+  left: -3px;
+}
+
+#share-btn .desc{
+  left: -10px;
+}
+
+#save-btn .desc{
+  left: -8px;
+}
+
+#rating-btn .desc{
+  left: -5px;
 }
 
 .main-container .heading{ 
