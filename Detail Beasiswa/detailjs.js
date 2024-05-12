@@ -66,7 +66,7 @@ saveBtn.addEventListener("click", function() {
     saveBtn.style.color = "#2F88F0";
     isClicked = true;
   } else {
-    saveBtn.style.color = "#000000";
+    saveBtn.style.color = "#9CA0B0";
     isClicked = false;
   }
 });
@@ -80,7 +80,7 @@ likeBtn.addEventListener("click", function() {
     likeBtn.style.color = "#FF0000";
     isClickedlike = true;
   } else {
-    likeBtn.style.color = "#000000";
+    likeBtn.style.color = "#9CA0B0";
     isClickedlike = false;
   }
 });
@@ -93,8 +93,21 @@ shareBtn.addEventListener("click", function() {
     shareBtn.style.color = "#FEC225";
     isClickedshare = true;
   } else {
-    shareBtn.style.color = "#000000";
+    shareBtn.style.color = "#9CA0B0";
     isClickedshare = false;
+  }
+});
+
+let ratingBtn = document.getElementById("rating-btn");
+let isClickedrating = false;
+
+ratingBtn.addEventListener("click", function() {
+  if (!isClickedrating) {
+    ratingBtn.style.color = "#FEC225";
+    isClickedrating = true;
+  } else {
+    ratingBtn.style.color = "#9CA0B0";
+    isClickedrating = false;
   }
 });
 

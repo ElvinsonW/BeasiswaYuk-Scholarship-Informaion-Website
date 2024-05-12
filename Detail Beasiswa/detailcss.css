@@ -275,6 +275,7 @@ body {
 }
 
 #save-btn {
+  color: #9CA0B0;
   transition: color 0.3s ease;
 }
 #save-btn:hover {
@@ -282,6 +283,7 @@ body {
 }
 
 #like-btn {
+  color: #9CA0B0;
   transition: color 0.3s ease;
 }
 
@@ -290,6 +292,7 @@ body {
 }
 
 #share-btn {
+  color: #9CA0B0;
   transition: color 0.3s ease;
 }
 
@@ -297,6 +300,14 @@ body {
   color: #FEC225;
 }
 
+#rating-btn{
+  color: #9CA0B0;
+  transition: color 0.3s ease;
+}
+
+#rating-btn:hover{
+  color: #FEC225;
+}
 
 .main-container .heading{ 
   cursor: pointer;
