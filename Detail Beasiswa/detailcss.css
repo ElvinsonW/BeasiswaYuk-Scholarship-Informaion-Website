@@ -264,6 +264,10 @@ body {
   margin-right: 5px;
 }
 
+.rating i{
+  color: #FDD836;
+}
+
 .main-container .heading .right-heading{ 
   display: flex;
   justify-content: flex-end;
@@ -405,9 +409,16 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
+  align-items: center;
   margin-top: 5px;
   width: 100%;
   gap: 20px;
+}
+
+.rating{
+  display: flex;
+  justify-content: center;
+  gap: 5px;
 }
 
 .major .content p{
@@ -633,6 +644,7 @@ body {
   flex-direction: column;
   align-items: center;
   line-height: 1.5;
+  margin-bottom: 5px;
 }
 
 .side-comment .list-comment{
