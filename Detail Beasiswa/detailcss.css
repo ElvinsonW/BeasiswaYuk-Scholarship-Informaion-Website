@@ -262,9 +262,13 @@ body {
 .main-container .heading .mid-heading .rating i{
   color: #FDD836;
   margin-right: 5px;
+  position: relative;
+  left: -220px;
+  top: 3px;
+
 }
 
-.rating i{
+.comment .rating i{
   color: #FDD836;
 }
 
