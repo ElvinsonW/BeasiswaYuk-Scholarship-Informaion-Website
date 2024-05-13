@@ -259,13 +259,14 @@ body {
   margin: 0;
 }
 
+.main-container .heading .mid-heading .rating {
+  display: flex;
+  justify-content: start;
+}
+
 .main-container .heading .mid-heading .rating i{
   color: #FDD836;
   margin-right: 5px;
-  position: relative;
-  left: -220px;
-  top: 3px;
-
 }
 
 .comment .rating i{
@@ -398,7 +399,7 @@ body {
 
 .scholarship-rating{
   width: 25%;
-  height: 210px;
+  height: 250px;
   padding: 15px 20px;
   border: 1px solid #CACACA;
   border-radius: 30px;
@@ -412,7 +413,7 @@ body {
 
 .rating-desc .scholarship-desc{
   width: 62%;
-  height: 210px;
+  height: 250px;
   margin: 0;
   padding: 15px 20px;
   border: 1px solid #CACACA;
@@ -514,7 +515,7 @@ body {
   justify-content: flex-start;
   position: absolute;
   z-index: 2;
-  bottom: -160px;
+  bottom: -13vw;
   height: 100%;
   margin: 10px 20px;
   font-size: 0.9rem;
@@ -537,7 +538,7 @@ body {
 }
 
 .university-box .list-univ .univ:hover .desc {
-  bottom: -35px; 
+  bottom: -3vw; 
 }
 
 .university-box .list-univ .univ:hover::after {

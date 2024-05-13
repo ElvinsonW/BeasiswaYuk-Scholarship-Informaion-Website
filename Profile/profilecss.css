@@ -376,6 +376,7 @@ h1{
     justify-content: space-between;
     align-items: center;
     width: 600px;
+    margin: 10px 0;
 }
  .list-beasiswa .beasiswa .desc .title h1{
     font-size: 2.5rem;
